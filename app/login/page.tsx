@@ -1,14 +1,10 @@
 import MainLogo from "../components/common/MainLogo";
 import Partition from "../components/common/Partition";
+import LoginForm from "../components/login/LoginForm";
 import SocialLogin from "../components/signup/SocialLogin";
 import { cls } from "../lib/utils";
-import SignupForm from "../components/signup/SignupForm";
 
-export default function SignupPage({
-  onAnimation = false,
-}: {
-  onAnimation?: boolean;
-}) {
+export default function LoginPage({ onAnimation }: { onAnimation?: boolean }) {
   return (
     <div className="flex flex-col gap-10 py-8 px-6">
       <div
@@ -25,9 +21,9 @@ export default function SignupPage({
           "flex flex-col gap-7 pt-60"
         )}
       >
-        <SocialLogin type="signup" />
+        <SocialLogin type="login" />
         <Partition description="회원가입에 필요한 기본정보를 입력해주세요." />
-        <SignupForm />
+        <LoginForm />
       </div>
     </div>
   );

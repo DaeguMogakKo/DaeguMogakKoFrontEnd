@@ -1,9 +1,11 @@
 import Link from "next/link";
 
-export default function SocialLogin() {
+export default function SocialLogin({ type }: { type: "signup" | "login" }) {
   return (
     <div className="flex flex-col gap-2">
-      <h1 className="uppercase">sns 회원가입</h1>
+      <h1 className="uppercase">
+        {type === "signup" ? "sns 회원가입" : "sns 로그인"}
+      </h1>
       <div className="grid grid-cols-3 gap-3">
         <Link
           className="border shadow-sm hover:bg-purple-700 text-gray-700 hover:border-none dark:text-white flex h-10 items-center justify-center gap-2 hover:text-white rounded-md transition-colors"

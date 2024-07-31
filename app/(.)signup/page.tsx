@@ -1,5 +1,5 @@
-import CreateAccount from "../signup/page";
+import SignupPage from "../signup/page";
 
-export default function HomeAnimation() {
-  return <CreateAccount onAnimation />;
+export default function SignupPageAnimation() {
+  return <SignupPage onAnimation />;
 }

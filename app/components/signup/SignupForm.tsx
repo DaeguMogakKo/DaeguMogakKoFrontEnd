@@ -5,7 +5,6 @@ import Input from "../common/Input";
 import InterestsBox from "./InterestsBox";
 import TOS from "./TOS";
 import Button from "../common/Button";
-import ReCAPTCHA from "react-google-recaptcha";
 
 interface FormData {
   interests: string[];

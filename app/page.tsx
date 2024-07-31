@@ -1,7 +1,7 @@
 import Link from "next/link";
 import MainLogo from "./components/common/MainLogo";
 
-export default function Home() {
+export default function EnterPage() {
   return (
     <div className="flex flex-col relative items-center justify-between min-h-[600px] h-screen p-6">
       <div className="absolute py-8 top-[30%]">

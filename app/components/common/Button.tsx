@@ -9,7 +9,10 @@ export default function Button({
   ...rest
 }: ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button className="w-full bg-violet-600 py-2 rounded-md" {...rest}>
+    <button
+      className="w-full bg-violet-600 text-white py-2 rounded-md"
+      {...rest}
+    >
       {text}
     </button>
   );
